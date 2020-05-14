@@ -130,3 +130,6 @@ STATIC_URL = '/static/'
 
 
 AUTH_USER_MODEL = 'users.CustomUser' ##### new
+
+LOGIN_REDIRECT_URL = 'home'  ##new
+LOGOUT_REDIRECT_URL = 'home' # new
