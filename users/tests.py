@@ -46,3 +46,4 @@ class SignupPageTests(TestCase): # new
         self.assertContains(self.response, 'Sign Up')
         self.assertNotContains(
         self.response, 'Hi there! I should not be on the page.')
+
