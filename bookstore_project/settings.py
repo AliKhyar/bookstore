@@ -4,12 +4,12 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ws7$2*^-nn)f7o4u!b83i+5zv@c^x%7q2^x-k+a=3^&ft))#q$'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get('DEBUG', default=False))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1'] if DEBUG==False else []
 
 
 # Application definition
