@@ -6,11 +6,8 @@ urlpatterns = [
     ## admin 
     path('admin/', admin.site.urls),
 
-    #auth
-    path('accounts/', include('django.contrib.auth.urls')),
-
-    #sign up
-    path('accounts/', include('users.urls')),
+    # User management
+    path('accounts/', include('allauth.urls')), # new
 
     # pages app
     path('', include('pages.urls')),
