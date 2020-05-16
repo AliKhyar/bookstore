@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DEBUG', default=False))
+DEBUG = True #bool(os.environ.get('DEBUG', default=False))
 
 ALLOWED_HOSTS = ['127.0.0.1'] if DEBUG==False else []
 
@@ -147,3 +147,6 @@ ACCOUNT_USERNAME_REQUIRED = False # new
 ACCOUNT_AUTHENTICATION_METHOD = 'email' # new
 ACCOUNT_EMAIL_REQUIRED = True # new
 ACCOUNT_UNIQUE_EMAIL = True # new
+
+#email settings
+DEFAULT_FROM_EMAIL = 'admin@alikhyar.com'
