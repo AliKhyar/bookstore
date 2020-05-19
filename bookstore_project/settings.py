@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     # local apps
     'users.apps.UsersConfig', ##### new
     'pages.apps.PagesConfig', ### new
+    'books.apps.BooksConfig',
+    
 ]
 
 

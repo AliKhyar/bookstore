@@ -11,4 +11,8 @@ urlpatterns = [
 
     # pages app
     path('', include('pages.urls')),
+
+    #books
+    path('books/', include('books.urls')),
+    
 ]
